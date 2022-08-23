@@ -5,7 +5,7 @@ pipeline {
         stage('git repo & clean') {
             steps {
                 //bat "rmdir  /s /q Assignment_6"
-                bat "https://github.com/AfrahMohammadi/Assignment_6.git"
+                bat "git clone https://github.com/AfrahMohammadi/Assignment_6.git"
                 bat "mvn clean -f Assignment_6"
             }
         }
